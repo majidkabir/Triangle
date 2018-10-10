@@ -4,6 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ * Test of isValidIsosceles method, of class Isosceles.
+ * 
  * @author Majid Ghaffuri
  */
 public class IsoscelesTest {

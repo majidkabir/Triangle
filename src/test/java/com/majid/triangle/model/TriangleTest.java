@@ -4,6 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ * Test of isValidTriangle method, of class Triangle.
+ * 
  * @author Majid Ghaffuri
  */
 public class TriangleTest {
@@ -25,6 +27,9 @@ public class TriangleTest {
         assertFalse(Triangle.isValidTriangle(10, 10, Integer.MIN_VALUE));
     }
     
+    /**
+     * Sum of tow sides should be greater than the other side
+     */
     @Test
     public void testInvalidTriangle() {
         assertFalse(Triangle.isValidTriangle(10, 10, 30));

@@ -1,6 +1,8 @@
 package com.majid.triangle.model;
 
 /**
+ * This class is represents a triangle and the validation method of it.
+ * 
  * @author Majid Ghaffuri
  */
 public abstract class Triangle {
@@ -29,13 +31,26 @@ public abstract class Triangle {
                 + " with sides length " + this.sideA + ", " + this.sideB + ", " + sideC;
     }
     
+    /**
+     * Validate if this sides lengths could form a triangle
+     * 
+     * @param sideA Length of sideA
+     * @param sideB Length of sideB
+     * @param sideC Length of sideC
+     * @return {@code true} if could form a triangle and {@code false} if couldn't
+     */
     public final static boolean isValidTriangle(int sideA, int sideB, int sideC){
+        /* Check for positive sides lengths */
         if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
            return false;
         }
        
-        return Math.abs(sideA - sideB) < sideC 
-            && Math.abs(sideA - sideC) < sideB
-            && Math.abs(sideB - sideA) < sideC;
+        /**
+         * Check for if sides lengths form a triangle
+         * Subtracting used because of not exceeding the Integer.MAX_VALUE 
+         */
+        return Math.abs(sideA - sideB) < sideC // sideA + sideC > sideB
+            && Math.abs(sideA - sideC) < sideB // sideA + sideB > sideC
+            && Math.abs(sideB - sideA) < sideC;// SideB + sideC > sideA
    }
 }

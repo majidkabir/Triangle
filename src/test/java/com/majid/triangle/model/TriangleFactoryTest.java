@@ -7,6 +7,8 @@ import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
 /**
+ * Test of createTriangle method, of class TriangleFactory.
+ * 
  * @author Majid Ghaffuri
  */
 public class TriangleFactoryTest {

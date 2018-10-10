@@ -1,6 +1,8 @@
 package com.majid.triangle.model;
 
 /**
+ * A scalene triangle is a triangle that has three unequal sides
+ * 
  * @author Majid Ghaffuri
  */
 public class Scalene extends Triangle{

@@ -4,6 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ * Test of isValidEquilateral method, of class Equilateral.
+ * 
  * @author Majid Ghaffuri
  */
 public class EquilateralTest {
