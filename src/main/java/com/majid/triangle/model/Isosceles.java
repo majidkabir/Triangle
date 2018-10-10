@@ -8,6 +8,7 @@ package com.majid.triangle.model;
  */
 public class Isosceles extends Triangle{
 
+    /* The constructor is protected becuase it should be created just with TriangleFactory*/
     protected Isosceles(int sideA, int sideB, int sideC) {
         super(sideA, sideB, sideC);
     }

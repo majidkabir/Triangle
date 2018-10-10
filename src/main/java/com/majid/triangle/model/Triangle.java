@@ -49,8 +49,8 @@ public abstract class Triangle {
          * Check for if sides lengths form a triangle
          * Subtracting used because of not exceeding the Integer.MAX_VALUE 
          */
-        return Math.abs(sideA - sideB) < sideC // sideA + sideC > sideB
-            && Math.abs(sideA - sideC) < sideB // sideA + sideB > sideC
-            && Math.abs(sideB - sideA) < sideC;// SideB + sideC > sideA
+        return sideA > sideB - sideC // sideA + sideC > sideB
+            && sideA > sideC - sideB // sideA + sideB > sideC
+            && sideB > sideA - sideC;// SideB + sideC > sideA
    }
 }
