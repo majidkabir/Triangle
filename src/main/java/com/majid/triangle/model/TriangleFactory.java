@@ -30,11 +30,9 @@ public class TriangleFactory {
         
         /* Order of this validations is important */
         if (Equilateral.isValidEquilateral(sideA, sideB, sideC)) {
-            triangle = new Equilateral(sideA, sideB, sideC);
-            
+            triangle = new Equilateral(sideA, sideB, sideC);            
         } else if (Isosceles.isValidIsosceles(sideA, sideB, sideC)) {
-            triangle = new Isosceles(sideA, sideB, sideC);
-            
+            triangle = new Isosceles(sideA, sideB, sideC);            
         } else {
             triangle = new Scalene(sideA, sideB, sideC);            
         }

@@ -19,7 +19,9 @@ public class Equilateral extends Triangle{
     }
     
     /**
-     * If all three sides of the triangle are equal length, it is a equilateral
+     * If all three sides of the triangle are equal length, it is a equilateral.
+     * Because this method just used in the TrinangleFactory and before calling
+     * this method, isValidTriangle method called I don't double check this here.
      * 
      * @param sideA Length of side A
      * @param sideB Length of side B
@@ -27,7 +29,7 @@ public class Equilateral extends Triangle{
      * @return {@code true} if could form an equilateral triangle 
      *         and {@code false} if couldn't
      */
-    public static boolean isValidEquilateral(int sideA, int sideB, int sideC){
+    final static boolean isValidEquilateral(int sideA, int sideB, int sideC){
         return sideA == sideB && sideB == sideC;
     }
 }

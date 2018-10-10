@@ -39,7 +39,7 @@ public abstract class Triangle {
      * @param sideC Length of sideC
      * @return {@code true} if could form a triangle and {@code false} if couldn't
      */
-    public final static boolean isValidTriangle(int sideA, int sideB, int sideC){
+    final static boolean isValidTriangle(int sideA, int sideB, int sideC){
         /* Check for positive sides lengths */
         if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
            return false;
