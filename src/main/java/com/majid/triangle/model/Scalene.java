@@ -13,8 +13,4 @@ public class Scalene extends Triangle{
     public TriangleType getType() {
         return TriangleType.SCALENE;
     }
-
-    public static boolean isValidScalene(int sideA, int sideB, int sideC){
-        return true;
-    }
 }

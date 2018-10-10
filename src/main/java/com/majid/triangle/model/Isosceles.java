@@ -15,6 +15,6 @@ public class Isosceles extends Triangle{
     }
    
     public static boolean isValidIsosceles(int sideA, int sideB, int sideC){
-        return true;
+        return sideA == sideB || sideA == sideC || sideB == sideC;
     }
 }

@@ -15,6 +15,6 @@ public class Equilateral extends Triangle{
     }
     
     public static boolean isValidEquilateral(int sideA, int sideB, int sideC){
-        return true;
+        return sideA == sideB && sideB == sideC;
     }
 }

@@ -26,10 +26,16 @@ public abstract class Triangle {
     @Override
     public String toString() {
         return "This is a triangle of type " + getType() 
-                + " with sides lenght " + this.sideA + ", " + this.sideB + ", " + sideC;
+                + " with sides length " + this.sideA + ", " + this.sideB + ", " + sideC;
     }
     
     public final static boolean isValidTriangle(int sideA, int sideB, int sideC){
-        return true;
+        if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
+           return false;
+        }
+       
+        return Math.abs(sideA - sideB) < sideC 
+            && Math.abs(sideA - sideC) < sideB
+            && Math.abs(sideB - sideA) < sideC;
    }
 }

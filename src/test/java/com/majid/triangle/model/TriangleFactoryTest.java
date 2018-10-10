@@ -33,19 +33,19 @@ public class TriangleFactoryTest {
     }
     
     @Test
-    public void testNegetiveSideALength() {
+    public void testNegativeSideALength() {
         thrown.expect(IllegalArgumentException.class);
         TriangleFactory.createTriangle(-10, 5, 10);
     }
     
     @Test
-    public void testNegetiveSideBLength() {
+    public void testNegativeSideBLength() {
         thrown.expect(IllegalArgumentException.class);
         TriangleFactory.createTriangle(10, -5, 20);
     }
     
     @Test
-    public void testNegetiveSideCLength() {
+    public void testNegativeSideCLength() {
         thrown.expect(IllegalArgumentException.class);
         TriangleFactory.createTriangle(10, 5, -10);
     }
